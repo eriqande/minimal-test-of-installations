@@ -1,0 +1,39 @@
+---
+title: "A Quick Test"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+If this RMarkdown document knits correctly, then
+RStudio, R, and the necessary other packages have been installed
+all right.
+
+This is just an example that comes with RStudio
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+## Checking on running shell commands
+
+Here we will run a shell command that cycles over the numbers
+1 to 10 and prints them, just to see if things are working:
+```{sh}
+for i in {1..10}; do 
+  echo "Number $i"
+done
+```
